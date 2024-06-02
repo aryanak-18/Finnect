@@ -191,6 +191,8 @@ export const getTransactionStatus = (date: Date) => {
   const today = new Date();
   const twoDaysAgo = new Date(today);
   twoDaysAgo.setDate(today.getDate() - 2);
+  // const twoMinutesAgo = new Date(today);
+  // twoMinutesAgo.setDate(today.getTime() - 2 * 60 * 1000);
 
   return date > twoDaysAgo ? "Processing" : "Success";
 };
