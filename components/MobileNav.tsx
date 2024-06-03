@@ -63,7 +63,7 @@ const MobileNav = ({ user }: MobileNavProps) => {
                         key={item.label}
                         className={cn("mobilenav-sheet_close w-full", {
                           "bg-bank-gradient": isActive,
-                        })}
+                        }, "hover:bg-blue-100")}
                       >
                         <div className="relative size-6">
                           <Image
@@ -90,7 +90,7 @@ const MobileNav = ({ user }: MobileNavProps) => {
                 <PlaidLink user={user} />
               </nav>
             </SheetClose>
-                <div className="mb-4"><Footer user={user} type="mobile"/></div>
+                <div className="mb-6"><Footer user={user} type="mobile"/></div>
           </div>
         </SheetContent>
       </Sheet>

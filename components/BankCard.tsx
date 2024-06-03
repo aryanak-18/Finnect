@@ -14,7 +14,7 @@ const BankCard = ({
       {/* div modified for card width */}
       <Link
         href={`/transaction-history/?id=${account.appwriteItemId}`}
-        className="bank-card"
+        className="bank-card hover:border-black-2"
       >
         <div className="bank-card_content">
           <div>

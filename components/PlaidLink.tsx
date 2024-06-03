@@ -73,7 +73,7 @@ const PlaidLink = ({ user, variant }: PlaidLinkProps) => {
           </p>
         </Button>
       ) : (
-        <Button onClick={() => open()} className="plaidlink-default">
+        <Button onClick={() => open()} className="plaidlink-default hover:bg-blue-100 py-7">
           <Image
             src="/icons/connect-bank.svg"
             alt="connect bank"
