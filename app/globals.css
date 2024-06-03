@@ -46,6 +46,54 @@
   background: #7878a3;
 }
 
+.circle{
+  position: absolute;
+  border: 4px solid transparent;
+  border-top-color: rgb(48, 138, 255);
+  border-radius: 100%;
+  animation: rotate linear infinite;
+}
+
+.circle.one{
+  height: 50px;
+  width: 50px;
+  left: 50px;
+  top: 50px;
+  animation-duration: 0.70s;
+}
+
+.circle.two{
+  height: 75px;
+  width: 75px;
+  top: 38px;
+  left: 38px;
+  animation-duration: 0.75s;
+}
+
+.circle.three{
+  height: 100px;
+  width: 100px;
+  top: 25px;
+  left: 25px;
+  animation-duration: 0.80s;
+}
+
+@keyframes rotate{
+  0%{
+    transform: rotateZ(-360deg)
+  }
+  100%{
+    transform: rotateZ(0deg)
+  }
+}
+
+.loader{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -90px 0 0 -90px;
+}
+
 @layer utilities {
   .input-class {
     @apply text-16 placeholder:text-16 rounded-lg border border-gray-300 text-gray-900 placeholder:text-gray-500;
