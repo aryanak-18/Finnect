@@ -12,9 +12,6 @@ Welcome to **Horizon**, an advanced online banking web application that allows u
 - [Running the Project](#running-the-project)
 - [Usage](#usage)
 - [Security](#security)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
 
 ## Features
 
