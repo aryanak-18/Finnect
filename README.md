@@ -70,7 +70,7 @@ Welcome to **Horizon**, an advanced online banking web application that allows u
 
 ## Configuration
 
-1. **Create a `.env.local` File**:
+1. **Create a `.env` File**:
 
 
 2. **Add the Following Variables**:
