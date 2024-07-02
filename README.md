@@ -129,7 +129,6 @@ Welcome to **Horizon**, an advanced online banking web application that allows u
 - **Sentry Integration**: The application uses Sentry to monitor and track errors for enhanced security and reliability.
 - **Data Encryption**: All sensitive data is encrypted both in transit and at rest.
 - **Secure Authentication**: Utilizes secure authentication methods for user account access.    
-#
-#
+<br/>
 ---
 
