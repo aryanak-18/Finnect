@@ -1,36 +1,138 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Horizon: Online Banking Web Application
 
-## Getting Started
+Welcome to **Horizon**, an advanced online banking web application that allows users to connect to their bank accounts, view details, manage transaction histories, and transfer funds securely. This project leverages modern technologies to ensure a seamless and secure user experience.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Running the Project](#running-the-project)
+- [Usage](#usage)
+- [Security](#security)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **User Management**: Users can create accounts, log in, and manage their profiles.
+- **Bank Connection**: Connect to multiple bank accounts through Plaid.
+- **Bank Details**: View connected bank account details and balances.
+- **Transaction History**: Access and manage transaction history for connected accounts.
+- **Fund Transfers**: Perform secure fund transfers between connected accounts using Dwolla.
+- **Security**: Enhanced security features provided by Sentry for error tracking and monitoring.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Technologies Used
 
-## Learn More
+- **Frontend**: [Next.js](https://nextjs.org/) , [TypeScript](https://www.typescriptlang.org/)
+- **Backend**: [Appwrite](https://appwrite.io/)
+- **Banking Integration**: [Plaid](https://plaid.com/)
+- **Fund Transfers**: [Dwolla](https://www.dwolla.com/)
+- **Security and Monitoring**: [Sentry](https://sentry.io/)
 
-To learn more about Next.js, take a look at the following resources:
+## Prerequisites
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Node.js v14 or above
+- npm or yarn
+- Appwrite server
+- Plaid account and API keys
+- Dwolla account and API keys
+- Sentry account for monitoring and security
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Installation
 
-## Deploy on Vercel
+1. **Clone the Repository**:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    ```bash
+    git clone https://github.com/aryanak-18/Horizon.git
+    cd Horizon
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+2. **Install Dependencies**:
+
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
+
+3. **Set Up Appwrite**:
+
+    Follow the instructions on the [Appwrite website](https://appwrite.io/docs) to set up your backend server and database.
+
+4. **Configure Plaid and Dwolla**:
+
+    Obtain your API keys from [Plaid](https://dashboard.plaid.com/signup) and [Dwolla](https://www.dwolla.com/).
+
+5. **Configure Sentry**:
+
+    Set up an account on [Sentry](https://sentry.io/) and obtain your DSN.
+
+## Configuration
+
+1. **Create a `.env.local` File**:
+
+
+2. **Add the Following Variables**:
+
+    ```env
+    NEXT_PUBLIC_SITE_URL=http://localhost:3000/
+    
+    NEXT_PUBLIC_APPWRITE_ENDPOINT=https://cloud.appwrite.io/v1
+    NEXT_PUBLIC_APPWRITE_PROJECT=
+    APPWRITE_DATABASE_ID=
+    APPWRITE_USER_COLLECTION_ID=
+    APPWRITE_BANK_COLLECTION_ID=
+    APPWRITE_TRANSACTION_COLLECTION_ID=
+    NEXT_APPWRITE_KEY=
+    
+    PLAID_CLIENT_ID=
+    PLAID_SECRET=
+    PLAID_ENV=
+    PLAID_PRODUCTS=
+    PLAID_COUNTRY_CODES=
+    
+    DWOLLA_KEY=
+    DWOLLA_SECRET=
+    DWOLLA_BASE_URL=https://api-sandbox.dwolla.com
+    DWOLLA_ENV=sandbox
+
+    ```
+
+3. **Save the File**.
+
+## Running the Project
+
+1. **Start the Next.js Development Server**:
+
+    ```bash
+    npm run dev
+    # or
+    yarn dev
+    ```
+
+2. **Access the Application**:
+
+    Open your browser and navigate to [http://localhost:3000](http://localhost:3000).
+
+## Usage
+
+- **Sign Up**: Create a new user account.
+- **Log In**: Access your account using your credentials.
+- **Connect Banks**: Use Plaid to connect your bank accounts securely.
+- **View Bank Details**: Access details of connected bank accounts.
+- **Transaction History**: View and manage your transaction history.
+- **Fund Transfers**: Transfer funds securely between accounts using Dwolla.
+
+## Security
+
+- **Sentry Integration**: The application uses Sentry to monitor and track errors for enhanced security and reliability.
+- **Data Encryption**: All sensitive data is encrypted both in transit and at rest.
+- **Secure Authentication**: Utilizes secure authentication methods for user account access.    
+#
+#
+---
+
