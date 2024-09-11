@@ -1,6 +1,6 @@
-# Horizon: Online Banking Web Application
+# Finnect: Online Banking Web Application
 
-Welcome to **Horizon**, an advanced online banking web application that allows users to connect to their bank accounts, view details, manage transaction histories, and transfer funds securely. This project leverages modern technologies to ensure a seamless and secure user experience.
+Welcome to **Finnect**, an advanced online banking web application that allows users to connect to their bank accounts, view details, manage transaction histories, and transfer funds securely. This project leverages modern technologies to ensure a seamless and secure user experience.
 
 ## Table of Contents
 
@@ -44,8 +44,8 @@ Welcome to **Horizon**, an advanced online banking web application that allows u
 1. **Clone the Repository**:
 
     ```bash
-    git clone https://github.com/aryanak-18/Horizon.git
-    cd Horizon
+    git clone https://github.com/aryanak-18/Finnect.git
+    cd Finnect
     ```
 
 2. **Install Dependencies**:
